@@ -32,7 +32,7 @@ med
 ```{r}
 averageStepsOfInterval <- aggregate(x=d$steps,by=list(interval=d$interval),FUN=mean,na.rm=TRUE)
 
-plot(x=averageStepsOfInterval$interval,y=averageStepsOfInterval$x,type="l",lwd=2,col="green")
+plot(x=averageStepsOfInterval$interval,y=averageStepsOfInterval$x,type="l",lwd=1,col="green")
 ```
 
 - Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
